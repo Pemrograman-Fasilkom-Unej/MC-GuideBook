@@ -1,0 +1,12 @@
+interval_minutes: 5
+messages:
+  - text: "&bIn memoriam &ePemro.id!"
+    hover: "&7Opens in browser"
+    click:
+      action: "open_url"
+      value: "https://web.archive.org/web/20230701195202/https://pemro.id/"
+  - text: "&bUse &e/guide &bto read the guidebook"
+    hover: "&7Click to open guide"
+    click:
+      action: "run_command"
+      value: "/guide"

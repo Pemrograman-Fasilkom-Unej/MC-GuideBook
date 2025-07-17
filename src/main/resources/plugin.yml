@@ -1,0 +1,22 @@
+name: GuideBook
+version: 1.0
+main: com.darkun7.guidebook.GuideBook
+api-version: 1.13
+author: YourName
+description: The way of survival on this server
+
+commands:
+  guide:
+    description: Open a virtual book with tips
+    usage: /guide <bookName> or /guide reload
+    permission: guide.use
+    aliases: [guides]
+
+permissions:
+  guide.use:
+    description: Allows using the /guide command
+    default: true
+
+  guide.reload:
+    description: Allows reloading all guide books from the guides/ folder
+    default: op
