@@ -42,17 +42,30 @@ public class GuideBook extends JavaPlugin {
         File folder = new File(getDataFolder(), "books");
         if (!folder.exists()) {
             folder.mkdirs();
-            saveResource("books/example.yml", false);
-            saveResource("books/welcome.yml", false);
+            saveResource("books/rules.yml", false);
+            saveResource("books/system.yml", false);
         }
 
-        for (File file : folder.listFiles((dir, name) -> name.endsWith(".yml"))) {
-            BookData book = BookData.loadFrom(file);
-            if (book != null) {
-                books.put(file.getName().replace(".yml", ""), book);
+        File[] files = folder.listFiles((dir, name) -> name.endsWith(".yml"));
+        if (files == null || files.length == 0) {
+            getLogger().warning("No book files found in 'books/' folder!");
+            return;
+        }
+
+        for (File file : files) {
+            try {
+                BookData book = BookData.loadFrom(file);
+                if (book != null) {
+                    books.put(file.getName().replace(".yml", ""), book);
+                } else {
+                    getLogger().warning("Failed to load book: " + file.getName());
+                }
+            } catch (Exception e) {
+                getLogger().warning("Error loading book '" + file.getName() + "': " + e.getMessage());
             }
         }
     }
+
 
     @Override
     public void onDisable() {

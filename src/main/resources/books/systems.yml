@@ -1,8 +1,0 @@
-title: "Basic System and Commands"
-author: "System"
-pages:
-  - "§6<System> §1Here brief about how this server works§a!\nThis server use time based playtime. It means you have limited time to play for §d2 hour§0 in weekday and §d4 hour §0in weekend.\nYou may check the time limit using press key §6TAB§0 or just use §6/playtime§0. §4Death§0 will cause consume daily playtime (counted upto §d5§0 stack)"
-  - "§6/playtime hud §7<type> §0to change variation to display playtime limit.\nYou may reduce daily playtime used by exchange currency §2Timerald§0.\nThe shop accesible via §6/timerald§0. This currency obtained via do §6/deposit§0 while holding §7Emerald§0 or just §6RIGHT CLICK§0 while holding emerald. You may §6/withdraw §7<number:max64>§0 while hold nothing."
-  - "Player also able to open their own shop via §6/shop§0 to access listing player's shop.\n§6/shop sell §7<price> @§7<pcs> §0while holding item, will deposit your item.\n§6/shop cancel§7 <id>§0 to cancel produk, lastly manage your shopvia §6/shop my§0, and §6/shop stash§0. §c*)§8To access as merchant you need to pay §212 Timerald§8 once."
-  - "This server also has §lMMMC:MMO§r  system that you can access the progression via §6/mmogui§0.\nIt also has build-in provided with §6/party§0 to create party, §6/ptp§0 to teleport to party member, and §6/partychat§0 it has alias (§6/pc /p§0) to send message privatly in party member."
-  - "Use §6/guide §7<name>§0 to open different books."
