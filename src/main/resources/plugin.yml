@@ -2,7 +2,7 @@ name: GuideBook
 version: 1.0
 main: com.darkun7.guidebook.GuideBook
 api-version: 1.13
-author: YourName
+author: Darkun7
 description: The way of survival on this server
 
 commands:
